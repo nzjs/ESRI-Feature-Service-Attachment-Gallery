@@ -3,9 +3,13 @@
 ## What is it?
 This tool takes an input ESRI hosted Feature Service URL and a theme parameter, and generates a new public URL for viewing the Feature Service attachments in a nice, responsive gallery. The intent is for the gallery URL to then be used as "Embedded Content" in an Operations Dashboard. 
 
+Tested and working for both Survey123 features and QuickCapture feature attachments. In theory, it should work for any hosted layer with attachments enabled.
+
 ## Requirements
 - Files hosted on your own web server with PHP enabled
 - Customise the main.php file with the below variables as desired
+- Input Service URL matches a format similar to the one below, with layer number (eg. 0): 
+  https://services3.arcgis.com/<ORG ID>/ArcGIS/rest/services/<SERVICE NAME>/FeatureServer/0
 
 ## Customisation
 ```php
