@@ -9,7 +9,7 @@ Tested and working for both Survey123 features and QuickCapture feature attachme
 - Files hosted on your own web server with PHP enabled
 - Customise the main.php file with the below variables as desired
 - Input Service URL matches a format similar to the one below, with layer number (eg. 0): 
-  https://services3.arcgis.com/<ORG ID>/ArcGIS/rest/services/<SERVICE NAME>/FeatureServer/0
+  https://services3.arcgis.com/{ORG ID}/ArcGIS/rest/services/{SERVICE NAME}/FeatureServer/0
 
 ## Customisation
 ```php
