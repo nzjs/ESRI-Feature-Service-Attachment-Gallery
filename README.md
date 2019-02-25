@@ -41,6 +41,7 @@ $lightThemeFont = '#4c4c4c';
 ## Example
 1. Input your parameters on the initial page
 2. View your gallery and copy the custom gallery URL with GET parameters
+(something like: https://<host>/attachments/gallery.php?id=<base64 encoded ID>&theme=dark)
 3. Paste the gallery URL into Operations Dashboard - Embedded Content
 
 Example screenshots:
