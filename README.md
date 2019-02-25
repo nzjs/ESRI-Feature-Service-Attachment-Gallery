@@ -5,10 +5,13 @@ This tool takes an input ESRI hosted Feature Service URL and a theme parameter, 
 
 Tested and working for both Survey123 features and QuickCapture feature attachments. In theory, it should work for any hosted layer with attachments enabled.
 
+It works for both public and privately shared data, by generating a token for the gallery each time the page is refreshed.
+
 ## Requirements
 - Files hosted on your own web server with PHP enabled
 - Customise the main.php file with the below variables as desired
 - Input Service URL matches a format similar to the one below, with layer number (eg. 0): 
+
   https://services3.arcgis.com/{ORG ID}/ArcGIS/rest/services/{SERVICE NAME}/FeatureServer/0
 
 ## Customisation
