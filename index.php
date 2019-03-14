@@ -52,7 +52,7 @@
         </div>
 
         <div class="form-group">
-        <label for="pk">Primary key identifier <small>(Unique ID field for layer)</label>
+        <label for="pk">Primary key identifier <small>(Unique ID field for layer)</small></label>
         <select class="form-control" style="min-width: 600px;" name="pk" placeholder="">
           <option value="FID">FID</option>
           <option value="OBJECTID">OBJECTID</option>
