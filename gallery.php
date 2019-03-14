@@ -25,6 +25,7 @@
     require('main.php');
 
     $base64 = CleanInput($_GET['id']);
+    $pk = CleanInput($_GET['pk']);
     $theme = CleanInput($_GET['theme']);
     $serviceURL = urldecode(base64_decode($base64));
 
@@ -47,7 +48,7 @@
     <?php 
     echo '<div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0 auto; text-align: center; margin-bottom: 10px;">';
     echo '<h4>Attachment Gallery</h4>';
-    $countText = ($maxImages != 0) ? 'Latest '.$maxImages.' Uploaded Images' : 'All Uploaded Images';
+    $countText = ($maxImages != 0) ? $maxImages.' Most Recent Images' : 'All Uploaded Images';
     echo $countText;
 
     // Output our variables for testing purposes
@@ -60,7 +61,7 @@
     // echo 'TOKEN: '.$token;
     // echo '<br/>';   echo '<br/>';
 
-    $definition = CreateDefinition($maxImages, $serviceURL, $token);
+    $definition = CreateDefinition($maxImages, $serviceURL, $pk, $token);
     // echo 'DEFINITION: '.$definition;
     // echo '<br/>';   echo '<br/>';
 

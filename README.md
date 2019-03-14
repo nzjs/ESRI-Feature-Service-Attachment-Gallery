@@ -38,11 +38,14 @@ $lightThemeBack = '#ffffff';
 $lightThemeFont = '#4c4c4c';
 ```
 
-## Example
+## How to use
 1. Input your parameters on the initial page
-2. View your gallery and copy the custom gallery URL with GET parameters
+- Feature Service URL
+- Primary key identifier for layer (OBJECTID or FID?)
+- Theme selection for gallery
+2. View your gallery, then copy the custom gallery URL with GET parameters
 (something like: https://{host}/attachments/gallery.php?id={base64 encoded ID}&theme=dark)
-3. Paste the gallery URL into Operations Dashboard - Embedded Content
+3. Paste the generated gallery URL into Operations Dashboard - Embedded Content panel
 
 Example screenshots:
 ![example-screenshots](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots.jpg "Example screenshots")

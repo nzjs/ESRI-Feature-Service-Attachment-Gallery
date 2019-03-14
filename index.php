@@ -52,6 +52,14 @@
         </div>
 
         <div class="form-group">
+        <label for="pk">Primary key identifier <small>(Unique ID field for layer)</label>
+        <select class="form-control" style="min-width: 600px;" name="pk" placeholder="">
+          <option value="FID">FID</option>
+          <option value="OBJECTID">OBJECTID</option>
+        </select>
+        </div>
+
+        <div class="form-group">
         <label for="theme">Theme selection</label>
         <select class="form-control" style="min-width: 600px;" name="theme" placeholder="">
           <option value="dark">Dark</option>

@@ -67,7 +67,7 @@ function GenerateToken($agolUsername, $agolPassword, $tokenReferrer, $tokenForma
 } // function
 
 
-function CreateDefinition($maxImages, $serviceURL, $token) {
+function CreateDefinition($maxImages, $serviceURL, $pk, $token) {
     try {
         // Identify our _most recent_ images depending on $maxImages variable
         if ($maxImages != 0) {
@@ -100,7 +100,7 @@ function CreateDefinition($maxImages, $serviceURL, $token) {
             // Or else we do the calculation as outlined above
             else {
             $maxImagesCalc = ($featureCount - $maxImages);
-            $definition = "FID>" . $maxImagesCalc;
+            $definition = $pk . ">" . $maxImagesCalc;
             return $definition;
             }
         }
