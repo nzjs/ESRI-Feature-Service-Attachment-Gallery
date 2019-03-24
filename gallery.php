@@ -80,8 +80,13 @@
       $obj = json_decode($json, true);
       //var_dump($obj['attachmentGroups']); 
 
-      // Reverse the array to order by most recent FID (descending)
-      $obj_array_reversed = array_reverse($obj['attachmentGroups'], true);
+      // First part: Sort the array by the parentObjectID value, using usort(). 
+      // Second part: Reverse the array to show the most recent parentObjectID at the top of the page.
+      $obj_array = $obj['attachmentGroups'];
+      usort($obj_array, function($a, $b) {
+        return $a['parentObjectId'] <=> $b['parentObjectId'];
+      });
+      $obj_array_reversed = array_reverse($obj_array, true);
       
       // First level of array
       foreach ($obj_array_reversed as $obj_key => $obj_value) {
@@ -98,7 +103,7 @@
           //var_dump($attach_value);
           //echo '<br/>';echo '<br/>';
           $imgUrl = ($serviceURL . '/' . $obj_value['parentObjectId'] . '/attachments/' . $attach_value['id'] . '?token=' . $token);
-          echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb"><span class="top-left-text">['.$obj_value['parentObjectId'].']</span>
           <a href="'.$imgUrl.'" class="fancybox" rel="ligthbox" target="_blank">
               <img src="'.$imgUrl.'" class="zoom img-fluid" title="Related Record: '.$obj_value['parentObjectId'].'">
           </a>
