@@ -47,8 +47,8 @@
 
     <?php 
     echo '<div class="col-lg-3 col-md-4 col-xs-6" style="margin: 0 auto; text-align: center; margin-bottom: 10px;">';
-    echo '<h4>Attachment Gallery</h4>';
-    $countText = ($maxImages != 0) ? $maxImages.' Most Recent Images' : 'All Uploaded Images';
+    echo '<h5>Photo Submissions</h5>';
+    $countText = ($maxImages != 0) ? 'Most Recent Images ('.$maxImages.')' : 'All Uploaded Images';
     echo $countText;
 
     // Output our variables for testing purposes
@@ -103,7 +103,7 @@
           //var_dump($attach_value);
           //echo '<br/>';echo '<br/>';
           $imgUrl = ($serviceURL . '/' . $obj_value['parentObjectId'] . '/attachments/' . $attach_value['id'] . '?token=' . $token);
-          echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb"><span class="top-left-text">['.$obj_value['parentObjectId'].']</span>
+          echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb"><span class="top-left-text"># '.$obj_value['parentObjectId'].'</span>
           <a href="'.$imgUrl.'" class="fancybox" rel="ligthbox" target="_blank">
               <img src="'.$imgUrl.'" class="zoom img-fluid" title="Related Record: '.$obj_value['parentObjectId'].'">
           </a>
