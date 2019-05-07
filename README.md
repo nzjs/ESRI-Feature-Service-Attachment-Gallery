@@ -49,4 +49,4 @@ $lightThemeFont = '#4c4c4c';
 
 Example screenshots:
 ![example-screenshots](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots.jpg "Example screenshots")
-![example-screenshots 2](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots2.jpg "Example screenshots 2")
+![example-screenshots 2](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots3.jpg "Example screenshots 2")
