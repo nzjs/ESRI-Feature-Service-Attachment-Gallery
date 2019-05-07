@@ -39,12 +39,13 @@ $lightThemeFont = '#4c4c4c';
 ```
 
 ## How to use
+Copy the files to a PHP-enabled web server, then browse to the `/index.php` page
 1. Input your parameters on the initial page
 - Feature Service URL
 - Primary key identifier for layer (OBJECTID or FID?)
 - Theme selection for gallery
 2. View your gallery, then copy the custom gallery URL with GET parameters
-(something like: https://{host}/attachments/gallery.php?id={base64 encoded ID}&theme=dark)
+(something like: https://{host}/attachments/gallery.php?id={base64 encoded ID}&theme=dark&pk=OID)
 3. Paste the generated gallery URL into Operations Dashboard - Embedded Content panel
 
 Example screenshots:
