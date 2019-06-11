@@ -51,3 +51,10 @@ Copy the files to a PHP-enabled web server, then browse to the `/index.php` page
 Example screenshots:
 ![example-screenshots](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots.jpg "Example screenshots")
 ![example-screenshots 2](https://github.com/nzjs/ESRI-Feature-Service-Attachment-Gallery/raw/master/demo/example-screenshots3.png "Example screenshots 2")
+
+## To do
+If there is enough interest...
+- Add option to filter attachments by current Dashboard selection
+- Add option to filter attachments by current Dashboard map extent
+- Add better error handling
+- Test with MapServer layer attachments and fix as appropriate
